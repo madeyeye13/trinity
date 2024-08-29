@@ -475,7 +475,11 @@ header {
 
 
 
+<<<<<<< HEAD
 /* ======STYLE FOR SERVICES RENDERED======= */
+=======
+/* ======= Services style ======= */
+>>>>>>> fea4d367de3380576764ce10b83b7b99a071818c
 
 
 #svc {
@@ -523,6 +527,100 @@ header {
     color: var(--dark-main-color);
 }
 
+<<<<<<< HEAD
+=======
+/* .item {
+    position: relative;
+    display: inline-block;
+}
+
+.item1 {
+    width: 100%;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item2 {
+    position: absolute;
+    bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.item2 h5 {
+    font-family: var(--font-1);
+    font-size: 1.4em;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.item2 span {
+    font-family: custom, cursive;
+}
+
+.line {
+    width: 30%;
+    background-color: rgb(199, 199, 199);
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.item:hover .line {
+    width: 100%;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+.rowfac {
+    color: var(--white-color);
+    font-weight: 500;
+    display: none;
+    
+    
+}
+
+.rowfac i {
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+    
+}
+
+
+
+
+.item:hover img {
+    -webkit-filter: none;
+    filter: none;
+    -webkit-transform: scale(1.09, 1.09);
+    transform: scale(1.09, 1.09);
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.item:hover .con {
+    bottom: 0;
+}
+
+
+.item img {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+ */
+
+>>>>>>> fea4d367de3380576764ce10b83b7b99a071818c
 
  .item {
     position: relative;
@@ -600,13 +698,18 @@ header {
     width: 10px;
     height: 10px;
     margin: 5px;
+<<<<<<< HEAD
     background: #ccc; 
+=======
+    background: #ccc; /* Default color for dots */
+>>>>>>> fea4d367de3380576764ce10b83b7b99a071818c
     border-radius: 50%;
     cursor: pointer;
     border: none;
 }
 
 .custom-dot.active {
+<<<<<<< HEAD
     background: #000; 
 }
 
@@ -714,3 +817,7 @@ header {
 }
 
 
+=======
+    background: #000; /* Color of active dot */
+}
+>>>>>>> fea4d367de3380576764ce10b83b7b99a071818c
