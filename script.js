@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-<<<<<<< HEAD
 $(document).ready(function () {
     var owl = $(".owl-carousel").owlCarousel({
         items: 1, 
@@ -152,36 +151,11 @@ $(document).ready(function () {
         currentIndex = currentIndex % event.item.count; 
         $('.custom-dot').removeClass('active'); 
         $('.custom-dot').eq(currentIndex).addClass('active');
-=======
-$(document).ready(function() {
-    var owl = $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        dots: false, // Disable default dots
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true
-    });
-
-    // Sync the custom dots with the owl carousel
-    owl.on('changed.owl.carousel', function(event) {
-        var index = event.item.index; // Get current index
-        $('.custom-dot').removeClass('active'); // Remove active class from all dots
-        $('.custom-dot[data-index="' + (index % $('.custom-dot').length) + '"]').addClass('active'); // Add active class to the current dot
-    });
-
-    // Add click event to custom dots
-    $('.custom-dot').click(function() {
-        var index = $(this).data('index'); // Get the index of the clicked dot
-        owl.trigger('to.owl.carousel', [index, 300]); // Go to the corresponding slide
->>>>>>> fea4d367de3380576764ce10b83b7b99a071818c
     });
 });
 
 
 
-<<<<<<< HEAD
 ///=====================TESTIMONIAL
 
 let currentTestimonial = 0;
@@ -243,43 +217,4 @@ setInterval(() => {
 
 // Initial display
 showTestimonial(currentTestimonial);
-=======
-
-// $(document).ready(function() {
-//     $(".owl-carousel").owlCarousel({
-//         items: 1,               // Show one item at a time
-//         loop: true,             // Enable continuous loop mode
-//         dots: true,             // Show dot indicators for navigation
-//         nav: false,             // Hide navigation arrows
-//         margin: 10,
-//         autoplay: true,         // Enable auto play
-//         autoplayTimeout: 5000,  // Set auto play interval to 5000ms (5 seconds)
-//         autoplayHoverPause: true // Pause auto play on mouse hover
-//     });
-// });
-
-
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 30,
-//     mouseDrag: true,
-//     autoplay: false,
-//     dots: true,
-//     autoplayHoverPause: true,
-//     nav: false,
-//     navText: ["<span class='lnr ti-angle-left'></span>","<span class='lnr ti-angle-right'></span>"],
-//     responsiveClass: true,
-//     responsive: {
-//         0: {
-//             items: 1
-//         },
-//         600: {
-//             items: 2
-//         },
-//         1000: {
-//             items: 3
-//         }
-//     }
-// });
->>>>>>> fea4d367de3380576764ce10b83b7b99a071818c
 
