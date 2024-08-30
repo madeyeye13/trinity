@@ -278,6 +278,32 @@
 
 
 
+    /* ======STYLE FOR PORTFOLIO======= */
+
+
+    .port1 {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        
+    }
+
+    .port {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .port2 {
+        width: 100%;
+    }
+
+
+    .port-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
 
 
 
@@ -639,6 +665,26 @@
 
 
 
+    /* ======STYLE FOR PORTFOLIO======= */
+
+
+    .port1 {
+        display: flex;
+        flex-direction: row;
+        gap: 200px;
+        
+    }
+
+    .port2 {
+        width: 100%;
+    }
+
+
+    .port-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
 
 
 

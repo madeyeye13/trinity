@@ -163,7 +163,7 @@ const testimonials = document.querySelectorAll('.testimonial');
 const dots = document.querySelectorAll('.dot');
 let startX = 0;
 let isSwiping = false;
-
+let autoSlideInterval;
 
 // Function to show the current testimonial
 function showTestimonial(index) {
@@ -171,6 +171,19 @@ function showTestimonial(index) {
         testimonial.style.transform = `translateX(-${index * 100}%)`;
         dots[i].classList.toggle('active', i === index);
     });
+}
+
+// Function to start the auto-slide interval
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+        showTestimonial(currentTestimonial);
+    }, 7000);
+}
+
+// Function to stop the auto-slide interval
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
 }
 
 // Dots navigation
@@ -209,12 +222,11 @@ document.querySelector('.testimonial-section').addEventListener('touchend', () =
     isSwiping = false;
 });
 
-// Auto-slide testimonials every 5 seconds
-setInterval(() => {
-    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-    showTestimonial(currentTestimonial);
-}, 7000);
+// Pause auto-slide on hover
+const testimonialSection = document.querySelector('.testimonial-section');
+testimonialSection.addEventListener('mouseenter', stopAutoSlide);
+testimonialSection.addEventListener('mouseleave', startAutoSlide);
 
 // Initial display
 showTestimonial(currentTestimonial);
-
+startAutoSlide();
