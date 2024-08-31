@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
     playButton.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent default anchor click behavior
         var videoId = playButton.getAttribute("href").split("https://youtu.be/")[1];
-        var embedUrl = "https://youtu.be/C9NvtXDb95I" + videoId + "?autoplay=1";
+        var embedUrl = "https://youtu.be/ZAOUK3fS7Lg" + videoId + "?autoplay=1";
         videoFrame.setAttribute("src", embedUrl);
         modal.style.display = "block";
     });
