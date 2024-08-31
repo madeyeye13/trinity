@@ -61,7 +61,10 @@
     <!------------AOS--------------->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+  <!-------------------YOUTUBE POPUP---------------------------->
 
+
+  <link rel="stylesheet" href="YouTubePopUp.css">
 
 </head>
 
@@ -414,18 +417,125 @@
 
 
 
+    <!----------------------------------FREQUENTLY ASKED QUESTIONS----------------------------->
+
+
+    <section id="faq">
+
+        <div class="faq1">
+
+            <div class="faq2">
+                <h2>Frequently Asked Questions</h2>
+                <p>Here are some of the questions we are often asked, you can go through them to get answers to your questions. However, if the questions you would like to ask is not listed, please feel free to contact us.</p>
+            </div>
+
+            <div class="faq-container">
+                <!-- Question 1 -->
+                <div class="faq-box">
+                    <div class="faq-question" onclick="toggleAnswer(1)">
+                        <span>What services do you offer? Wedding and Event planning or Event Styling?</span>
+                        <i class="ti-plus" id="icon-1"></i>
+                    </div>
+                    <div class="faq-answer" id="answer-1">
+                        <p>
+                            Our services as a Wedding and Event Planning company involve the overall coordination and management of your event, including vendor selection, timeline creation, budget management, and logistical planning.
+                            <br><br>
+                            On the other hand, Event Styling focuses on the aesthetic or visual aspects of your event, such as décor, floral arrangements, theme development, and lighting.
+                            <br><br>
+                            While both services complement each other, event planning focuses on the organization and execution of the event, while event styling is about the visual appeal of the event. We offer both services, allowing clients the flexibility to opt for either one or both, which can offer significant value.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Question 2 -->
+                <div class="faq-box">
+                    <div class="faq-question" onclick="toggleAnswer(2)">
+                        <span>How far in advance should we book your services?</span>
+                        <i class="ti-plus" id="icon-2"></i>
+                    </div>
+                    <div class="faq-answer" id="answer-2">
+                        <p>
+                            We recommend booking our services as early as possible to ensure availability for your desired date. For weddings, it's ideal to book at least 12-18 months in advance, especially during peak wedding seasons. For other events, such as corporate gatherings or parties, booking 6-12 months ahead is advisable. However, we understand that every situation is unique, so feel free to contact us for availability even if your event is sooner.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Question 3 -->
+                <div class="faq-box">
+                    <div class="faq-question" onclick="toggleAnswer(3)">
+                        <span>How do you handle unexpected changes or emergencies during an event?</span>
+                        <i class="ti-plus" id="icon-3"></i>
+                    </div>
+                    <div class="faq-answer" id="answer-3">
+                        <p>
+                            We understand that unforeseen circumstances can arise, and we're well-prepared to handle them. Our team has extensive experience managing events of all sizes and is equipped to handle many last-minute changes or emergencies that may occur. We maintain open communication channels with vendors and have backup plans in place to mitigate any disruptions to your event. Rest assured; we'll work tirelessly behind the scenes to ensure that your special day goes off without a hitch!
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Question 4 -->
+                <div class="faq-box">
+                    <div class="faq-question" onclick="toggleAnswer(4)">
+                        <span>Do you do destination weddings & parties?</span>
+                        <i class="ti-plus" id="icon-4"></i>
+                    </div>
+                    <div class="faq-answer" id="answer-4">
+                        <p>
+                            Absolutely! We have experience planning events in various locations. Whether you're dreaming of a beachside ceremony or a romantic European destination, our team is equipped to handle all the logistics and coordination to make your dream wedding a reality, regardless of the location.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Question 5 -->
+                <div class="faq-box">
+                    <div class="faq-question" onclick="toggleAnswer(5)">
+                        <span>How involved will we be in the planning and styling process?</span>
+                        <i class="ti-plus" id="icon-5"></i>
+                    </div>
+                    <div class="faq-answer" id="answer-5">
+                        <p>
+                            Your level of involvement is entirely up to you! We understand that every client has different preferences when it comes to event planning and styling. Some clients prefer to be highly involved in every decision, while others prefer to delegate the details to us. We'll work closely with you to determine your level of involvement and ensure that the planning and styling process aligns with your preferences, providing regular updates and seeking your input throughout the process.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
 
 
+        </div>
 
 
+    </section>
 
 
+    <!-------------------------YOUTUBE VIDEO---------------------------->
 
 
+    <section id="vid">
+
+        <div class="vid1">
+            <h5>Be Motivated</h4>
+            <h4>Latest Wedding <span>Video</span></h4>
+        </div>
+        
+        <div class="ctr round">
+            <div class="ctr round">
+                <a href="https://youtu.be/C9NvtXDb95I" class="video-popup"><i class="ti-control-play"></i></a>
+            </div>
+        </div>
+
+    </section>
 
 
+    <!-- Popup container for the video -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
 
+    
 
 
 
@@ -448,6 +558,7 @@
     
     
     <script src="script.js"></script>
+   <script src="YouTubePopUp.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 

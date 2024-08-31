@@ -230,3 +230,56 @@ testimonialSection.addEventListener('mouseleave', startAutoSlide);
 // Initial display
 showTestimonial(currentTestimonial);
 startAutoSlide();
+
+
+
+
+//JAVASCRIPT FOR FREQUENTLY ASKED QUESTIONS
+
+
+function toggleAnswer(id) {
+    const answer = document.getElementById(`answer-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+
+    if (answer.style.display === "block") {
+        answer.style.display = "none";
+        icon.classList.remove("ti-close");
+        icon.classList.add("ti-plus");
+    } else {
+        answer.style.display = "block";
+        icon.classList.remove("ti-plus");
+        icon.classList.add("ti-close");
+    }
+}
+
+
+
+//JAVASCRIPT FOR YOUTUBE POPUP
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("videoModal");
+    var videoFrame = document.getElementById("videoFrame");
+    var playButton = document.querySelector(".video-popup");
+    var closeButton = document.querySelector(".close");
+
+    playButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default anchor click behavior
+        var videoId = playButton.getAttribute("href").split("https://youtu.be/")[1];
+        var embedUrl = "https://youtu.be/C9NvtXDb95I" + videoId + "?autoplay=1";
+        videoFrame.setAttribute("src", embedUrl);
+        modal.style.display = "block";
+    });
+
+    closeButton.addEventListener("click", function () {
+        modal.style.display = "none";
+        videoFrame.setAttribute("src", ""); // Stop the video
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            videoFrame.setAttribute("src", ""); // Stop the video
+        }
+    });
+});

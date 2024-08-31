@@ -414,7 +414,7 @@ header {
     object-fit: cover;
     overflow: hidden;
     height: 100vh;
-    background-color: #080808c5;
+    background-color: #080808bd;
     background-blend-mode: overlay;
     opacity: 1;
     margin-top: 80px;
@@ -897,7 +897,7 @@ header {
     object-fit: cover;
     overflow: hidden;
     height: 30vh;
-    background-color: #080808e7;
+    background-color: #080808c6;
     background-blend-mode: overlay;
     opacity: 1;
     margin-top: 120px;
@@ -936,6 +936,192 @@ header {
 #cur button:hover {
     background-color: var(--gold-color);
 }
+
+
+
+/*=============FREQUENTLY ASKED QUESTIONS===========*/
+
+#faq {
+    margin-top: 100px;
+}
+
+.faq1 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.faq2 {
+    margin-bottom: 50px;
+}
+
+.faq2 h2 {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: var(--purplecolor);
+}
+
+.faq2 p {
+    font-size: 0.9em;
+    line-height: 2em;
+    color: var(--dark-main-color);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.faq-box span {
+    font-weight: 500;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+
+.faq-box p {
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 2em;
+    margin-top: 20px;
+}
+
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+}
+
+.ti-plus, .ti-close {
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+}
+
+/*----------------VIDEO WEDDING CASCADING STYLE------------*/
+
+
+#vid {
+    background-image: url(image/21.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+    height: 50vh;
+    background-color: #080808b8;
+    background-blend-mode: overlay;
+    opacity: 1;
+    margin-top: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vid1 {
+    margin-bottom: 40px;
+    color: var(--white-color);
+}
+
+.vid1 h5 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: var(--font-3);
+}
+
+.vid1 h4 {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.vid1 span {
+    color: var(--lpurple);
+    font-family: custom, cursive;
+}
+
+.ctr.round {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid var(--white-color); /* Outer circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctr.round:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--white-color); /* Inner circle */
+    border-radius: 50%;
+}
+
+.ti-control-play {
+    color: var(--white-color);
+    font-size: 30px;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 0;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 
 
 
