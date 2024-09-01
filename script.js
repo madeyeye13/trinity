@@ -257,6 +257,35 @@ function toggleAnswer(id) {
 //JAVASCRIPT FOR YOUTUBE POPUP
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     var modal = document.getElementById("videoModal");
+//     var videoFrame = document.getElementById("videoFrame");
+//     var playButton = document.querySelector(".video-popup");
+//     var closeButton = document.querySelector(".close");
+
+//     playButton.addEventListener("click", function (event) {
+//         event.preventDefault(); // Prevent default anchor click behavior
+//         var videoId = playButton.getAttribute("href").split("https://youtu.be/")[1];
+//         var embedUrl = "https://youtu.be/C9NvtXDb95I" + videoId + "?autoplay=1";
+//         videoFrame.setAttribute("src", embedUrl);
+//         modal.style.display = "block";
+//     });
+
+//     closeButton.addEventListener("click", function () {
+//         modal.style.display = "none";
+//         videoFrame.setAttribute("src", ""); // Stop the video
+//     });
+
+//     window.addEventListener("click", function (event) {
+//         if (event.target == modal) {
+//             modal.style.display = "none";
+//             videoFrame.setAttribute("src", ""); // Stop the video
+//         }
+//     });
+// });
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var modal = document.getElementById("videoModal");
     var videoFrame = document.getElementById("videoFrame");
@@ -265,8 +294,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     playButton.addEventListener("click", function (event) {
         event.preventDefault(); // Prevent default anchor click behavior
-        var videoId = playButton.getAttribute("href").split("https://youtu.be/")[1];
-        var embedUrl = "https://youtu.be/C9NvtXDb95I" + videoId + "?autoplay=1";
+        var videoId = playButton.getAttribute("href").split("vimeo.com/")[1];
+        var embedUrl = "https://player.vimeo.com/video/" + videoId + "?autoplay=1";
         videoFrame.setAttribute("src", embedUrl);
         modal.style.display = "block";
     });
@@ -283,3 +312,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+

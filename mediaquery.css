@@ -765,4 +765,38 @@
 
 
 
+
+    /*--------------------FOOOOOOOOTER=========*/
+
+    .fut {
+        display: flex;
+        flex-direction: row;
+        padding-left: 70px;
+        padding-right: 70px;
+        justify-content: space-between;
+       
+    }
+
+    .fut1 p {
+        padding-right: 50%;
+    }
+
+    .fut2 {
+        position: relative;
+        left: -200px;
+    }
+
+    .fut-social {
+        position: relative;
+        left: 25px;
+    }
+
+    .cpy p {
+        padding-left: 70px;
+    }
+
+
+
+
+
 }
