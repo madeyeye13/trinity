@@ -11,9 +11,10 @@ document.querySelector('.nav-toggle').addEventListener('click', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.nav-menu ul li a');
-    const currentUrl = window.location.hash || 'index.html'; 
+    const currentUrl = window.location.pathname.split('/').pop() || 'index.html'; // Get the current filename
 
     links.forEach(link => {
+        // Check if the href of the link matches the current URL
         if (link.getAttribute('href') === currentUrl) {
             link.classList.add('active');
         } else {

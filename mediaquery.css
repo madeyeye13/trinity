@@ -339,12 +339,148 @@
         color: #333;
         cursor: pointer;
     }
+
+
+
+    /*--------------------FOOOOOOOOTER=========*/
+
+    .fut {
+        display: flex;
+        flex-direction: row;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-between;
+        gap: 50px;
+       
+    }
+
+    .fut1 p {
+        padding-right: 10%;
+    }
+
+    .fut2 {
+        position: relative;
+        /* left: -200px; */
+    }
+
+    .fut-social {
+        position: relative;
+        left: 25px;
+    }
+
+    .cpy p {
+        padding-left: 70px;
+    }
     
 
 
 
 
 
+    /*---------------------ABOUT PAGE CASCADING STYLESHEET----------*/
+    
+
+
+
+
+    .frontal1 {
+        background-color: var(--white-color);
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        max-width: 400px;
+        margin-left: 70px;
+        margin-top: 50px;
+        
+    }
+
+
+
+
+
+
+    #intro {
+    
+        margin-top: 60px;
+        
+    }
+    
+    .intro-text p {
+        font-family: var(--font-3);
+        line-height: 2em;
+        /* padding-left: 70px;
+        padding-right: 70px; */
+        margin-bottom: 30px;
+        font-size: 1.5em;
+    }
+
+    .intro1 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+
+
+    /*------------------------BOSSSSS-----------------*/
+
+
+    #boss {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .boss1 {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        padding-left: 70px;
+        padding-right: 70px;
+        position: relative;
+        gap: 50px;
+        
+    }
+
+    .boss2 {
+        min-width: 50%;
+    }
+
+
+    .boss-text p {
+        line-height: 2em;
+        font-size: 1em;
+        font-family: var(--font-3);
+        font-weight: 400;
+        margin-bottom: 30px;
+        
+    }
+
+    .boss-img {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .boss-img img {
+        width: 100%;
+    }
+
+    .boss-text {
+        margin-top: 0px;
+        
+        
+    }
+
+
+
+    /*------------OUR TEAM---------*/
+
+
+    .sv-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 
 
 
@@ -794,6 +930,137 @@
     .cpy p {
         padding-left: 70px;
     }
+
+
+
+
+
+
+    /*---------------------ABOUT PAGE CASCADING STYLE--------------*/
+
+
+    #frontal {
+        background-image: url(image/22.jpg);
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        overflow: hidden;
+        height: 100vh;
+        
+        background-blend-mode: overlay;
+        opacity: 1;
+        margin-top: 120px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    .frontal1 {
+        background-color: var(--white-color);
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        max-width: 400px;
+        margin-left: 70px;
+        margin-top: 50px;
+        
+    }
+
+
+
+    /*---------------INTRO PAGE-----------*/
+
+
+    #intro {
+    
+        margin-top: 90px;
+        
+    }
+    
+    .intro-text p {
+        font-family: var(--font-3);
+        line-height: 2em;
+        padding-left: 30px;
+        padding-right: 70px;
+        margin-bottom: 30px;
+        position: relative;
+        font-size: 1em;
+    }
+
+    .intro1 {
+        display: flex;
+        flex-direction: row;
+        padding-right: 70px;
+        
+    }
+
+
+
+
+    /*------------------------BOSSSSS-----------------*/
+
+
+    #boss {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .boss1 {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        padding-left: 70px;
+        padding-right: 70px;
+        position: relative;
+        gap: 50px;
+        
+    }
+
+    .boss2 {
+        min-width: 50%;
+    }
+
+
+    .boss-text p {
+        line-height: 2em;
+        font-size: 1em;
+        font-family: var(--font-3);
+        font-weight: 400;
+        margin-bottom: 0px;
+    }
+
+    .boss-img {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .boss-img img {
+        width: 100%;
+    }
+
+    .boss-text {
+        margin-top: 220px;
+        
+        
+    }
+
+
+
+    /*------------OUR TEAM---------*/
+
+
+    .sv-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
+    
 
 
 
