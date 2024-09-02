@@ -314,3 +314,48 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+
+
+////////SCROLL FOR SERVICE PAGE
+
+document.querySelectorAll('.clt2 a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        const duration = 1000; // Adjust this value for slower or faster scrolling (in milliseconds)
+        let start = null;
+
+        window.requestAnimationFrame(step);
+
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            const progress = timestamp - start;
+            const stepPosition = easeInOutQuad(progress, startPosition, distance, duration);
+            window.scrollTo(0, stepPosition);
+            if (progress < duration) window.requestAnimationFrame(step);
+        }
+
+        // Easing function for smooth effect
+        function easeInOutQuad(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+    });
+});
+
+
+
+////C2A ROW NOT CLICKABLE
+
+
+
+
