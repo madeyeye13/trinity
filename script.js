@@ -354,8 +354,48 @@ document.querySelectorAll('.clt2 a').forEach(anchor => {
 
 
 
-////C2A ROW NOT CLICKABLE
+////FOR SERVICE PAGE
 
+//////PROCESS JAVASCRIPT 
+
+const processContents = [
+    {
+        title: "01. LET'S MEET",
+        description: "Relationship building is important so we work closely with each client to curate events that reflect their personalities and style."
+    },
+    {
+        title: "02. PLANNING",
+        description: "We'll work hand in hand with you to design and organize every detail of your event, ensuring it aligns perfectly with your vision."
+    },
+    {
+        title: "03. EXECUTION",
+        description: "Our team will be there on the day of the event to coordinate and manage all the logistics, making sure everything runs smoothly."
+    },
+    {
+        title: "04. FOLLOW-UP",
+        description: "After the event, we'll review everything to gather feedback and ensure that we continue to provide the highest quality service."
+    }
+];
+
+const processTitle = document.querySelector(".proc3 h3");
+const processDescription = document.querySelector(".proc3 p");
+const nextButton = document.querySelector(".nxt span");
+const processContainer = document.querySelector(".proc3");
+
+let currentIndex = 0;
+
+function updateContent() {
+    processContainer.classList.add("hidden");
+
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % processContents.length;
+        processTitle.textContent = processContents[currentIndex].title;
+        processDescription.textContent = processContents[currentIndex].description;
+        processContainer.classList.remove("hidden");
+    }, 250); 
+}
+
+nextButton.addEventListener("click", updateContent);
 
 
 

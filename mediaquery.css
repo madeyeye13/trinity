@@ -480,6 +480,88 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+
+
+
+
+    /*---------------------SERVICE PAGE CASCADING STYLE--------------*/
+
+    /*-----------------CATALOG SECTION--------*/
+
+    #ctl {
+        margin-top: 150px;
+    }
+
+    .clt2 {
+        width: 100%;
+        /* position: relative; */
+        top: 50px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+    .clt2 a {
+        max-width: 100%;
+    }
+
+    .clt1 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 70px;
+        padding-right: 70px;
+        gap: 0px;
+    }
+
+    .clt2-img {
+        width: 100%;
+        height: 50vh;
+    }
+
+
+    .reveal1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 70px;
+        padding-right: 70px;
+        gap: 70px;
+    }
+
+
+ /*----------------PROCESS----------------*/
+
+
+    #proc {
+        margin-top: 80px;
+        background-image: url(image/28.jpg);
+        height: 60vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        
+        justify-content: center;
+    }
+
+
+    .proc2 {
+    color: var(--white-color);
+    background-color: var(--dark-main-color);
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 70px;
+
+
+}
+
+
+   
     
 
 
@@ -1084,6 +1166,89 @@
         flex-direction: column;
         justify-content: center;
     }
+
+
+
+    /*-----------------CATALOG SECTION--------*/
+
+    #ctl {
+        margin-top: 150px;
+    }
+
+    .clt2 {
+        width: 100%;
+        position: relative;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .clt2 a {
+        max-width: 40%;
+    }
+
+    .clt1 {
+        display: flex;
+        flex-direction: row;
+        padding-left: 70px;
+        padding-right: 70px;
+        gap: 0px;
+    }
+
+    .clt2-img {
+        width: 90%;
+        height: 50vh;
+    }
+
+
+    .reveal1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 70px;
+        padding-right: 70px;
+        gap: 70px;
+    }
+
+
+
+
+    /*---------------------PLANNING PROCESS------------*/
+
+
+#proc {
+    margin-top: 140px;
+    background-image: url(image/28.jpg);
+    height: 100vh;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    /* display: flex; */
+    
+    justify-content: center;
+}
+
+
+.proc2 {
+    color: var(--white-color);
+    background-color: var(--dark-main-color);
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 80px;
+    width: 50%;
+
+
+}
+
+.proc1 {
+    position: relative;
+    left: -35px;
+}
+
 
 
 

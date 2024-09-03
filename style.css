@@ -1585,6 +1585,7 @@ html {
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px;
+    gap: 30px;
 }
 
 .reveal1 h5 {
@@ -1638,6 +1639,111 @@ html {
     top: 2px;
     margin-left: 10px;
 }
+
+
+/*---------------------PLANNING PROCESS------------*/
+
+
+#proc {
+    margin-top: 80px;
+    background-image: url(image/28.jpg);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+}
+
+
+.proc2 {
+    color: var(--white-color);
+    background-color: var(--dark-main-color);
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 70px;
+
+
+}
+
+.proc3 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.proc3 h4 {
+    font-weight: 300;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+}
+
+.hline {
+    background-color: var(--white-color);
+    width: 100%;
+    height: 1px;
+}
+
+.proc3 h3 {
+    font-weight: 300;
+    font-size: 1.8em;
+    color: var(--lpurple);
+}
+
+.proc3 p {
+    font-family: var(--font-2);
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.nxt {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: end;
+}
+
+.nxt i {
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    cursor: pointer;
+    
+
+}
+
+.nxt span {
+    font-family: custom, cursive;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.nxt span:hover {
+    color: var(--lpurple);
+}
+
+.nxt i:hover {
+    color: var(--lpurple);
+}
+
+
 
 
 
