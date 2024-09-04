@@ -399,3 +399,143 @@ nextButton.addEventListener("click", updateContent);
 
 
 
+
+////////JAVASCRIPT FOR VIEWING GALLERY/LIGHTBOX
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const images = document.querySelectorAll('.fsimge img');
+//     const lightbox = document.getElementById('lightbox');
+//     const lightboxImage = document.getElementById('lightbox-image');
+//     const imageNumber = document.getElementById('image-number');
+//     const closeLightbox = document.getElementById('close-lightbox');
+//     const zoomIn = document.getElementById('zoom-in');
+//     const zoomOut = document.getElementById('zoom-out');
+//     const prevArrow = document.getElementById('prev-arrow');
+//     const nextArrow = document.getElementById('next-arrow');
+//     const lightboxImageContainer = document.getElementById('lightbox-image-container');
+//     let currentIndex = 0;
+//     let isZoomed = false;
+//     let scale = 1;
+//     let startX = 0;
+//     let startY = 0;
+//     let originX = 0;
+//     let originY = 0;
+
+//     images.forEach(image => {
+//         image.addEventListener('click', () => {
+//             currentIndex = parseInt(image.dataset.index) - 1;
+//             openLightbox(image.src, currentIndex + 1);
+//         });
+//     });
+
+//     closeLightbox.addEventListener('click', () => {
+//         lightbox.classList.add('hidden');
+//         resetZoom();
+//     });
+
+//     zoomIn.addEventListener('click', () => {
+//         if (!isZoomed) {
+//             scale = 2;
+//             isZoomed = true;
+//             lightboxImage.style.transform = `scale(${scale})`;
+//             lightboxImageContainer.style.overflow = 'auto';
+//         }
+//     });
+
+//     zoomOut.addEventListener('click', () => {
+//         if (isZoomed) {
+//             resetZoom();
+//         }
+//     });
+
+//     prevArrow.addEventListener('click', () => {
+//         if (!isZoomed) {
+//             currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+//             updateLightboxImage();
+//         }
+//     });
+
+//     nextArrow.addEventListener('click', () => {
+//         if (!isZoomed) {
+//             currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+//             updateLightboxImage();
+//         }
+//     });
+
+//     lightbox.addEventListener('wheel', (e) => {
+//         e.preventDefault();
+//     }, { passive: false });
+
+//     function openLightbox(src, index) {
+//         lightboxImage.src = src;
+//         imageNumber.textContent = `Image ${index}`;
+//         lightbox.classList.remove('hidden');
+//     }
+
+//     function updateLightboxImage() {
+//         lightboxImage.src = images[currentIndex].src;
+//         imageNumber.textContent = `Image ${currentIndex + 1}`;
+//         resetZoom();
+//     }
+
+//     function resetZoom() {
+//         scale = 1;
+//         isZoomed = false;
+//         lightboxImage.style.transform = `scale(${scale})`;
+//         lightboxImage.style.left = `0px`;
+//         lightboxImage.style.top = `0px`;
+//         lightboxImageContainer.style.overflow = 'hidden';
+//     }
+
+//     // Move image when zoomed
+//     lightboxImageContainer.addEventListener('mousedown', (e) => {
+//         if (isZoomed) {
+//             e.preventDefault();
+//             startX = e.clientX - originX;
+//             startY = e.clientY - originY;
+//             lightboxImageContainer.addEventListener('mousemove', moveImage);
+//         }
+//     });
+
+//     window.addEventListener('mouseup', () => {
+//         lightboxImageContainer.removeEventListener('mousemove', moveImage);
+//     });
+
+//     function moveImage(e) {
+//         if (isZoomed) {
+//             originX = e.clientX - startX;
+//             originY = e.clientY - startY;
+//             lightboxImage.style.transform = `translate(${originX}px, ${originY}px) scale(${scale})`;
+//         }
+//     }
+
+//     // Pinch to zoom
+//     let initialDistance = 0;
+
+//     lightboxImageContainer.addEventListener('touchstart', (e) => {
+//         if (e.touches.length === 2) {
+//             initialDistance = getDistance(e.touches[0], e.touches[1]);
+//         }
+//     });
+
+//     lightboxImageContainer.addEventListener('touchmove', (e) => {
+//         if (e.touches.length === 2) {
+//             const currentDistance = getDistance(e.touches[0], e.touches[1]);
+//             const scaleChange = currentDistance / initialDistance;
+//             scale = Math.min(Math.max(1, scale * scaleChange), 3); // limit zoom level between 1 and 3
+//             lightboxImage.style.transform = `scale(${scale})`;
+//             initialDistance = currentDistance;
+//             isZoomed = scale > 1;
+//         }
+//     });
+
+//     function getDistance(touch1, touch2) {
+//         return Math.sqrt(
+//             Math.pow(touch2.clientX - touch1.clientX, 2) +
+//             Math.pow(touch2.clientY - touch1.clientY, 2)
+//         );
+//     }
+// })
+
+

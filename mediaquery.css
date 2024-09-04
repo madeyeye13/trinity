@@ -562,7 +562,42 @@
 
 
    
+    /*-------------------------GALLERY PAGE CASCADING--------------*/
+
+
+
+#frontalgal {
+    background-image: url(image/27.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+    height: 60vh;
     
+    background-blend-mode: overlay;
+    opacity: 1;
+    margin-top: 120px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.wrk1 {
+    padding-left: 70px;
+    padding-right: 70px;
+ }
+
+
+
+
+
+.gal-img1 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
 
 
 
@@ -1248,6 +1283,126 @@
     position: relative;
     left: -35px;
 }
+
+
+
+/*-------------------------GALLERY PAGE CASCADING--------------*/
+
+
+
+#frontalgal {
+    background-image: url(image/27.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100vh;
+    
+    background-blend-mode: overlay;
+    opacity: 1;
+    margin-top: 120px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*------------------------------LETS WORK---------------------*/
+
+.wrk1 {
+    padding-left: 70px;
+ }
+
+
+
+
+ /*------------------------------FOR GALLERY VIEWING PAGE*/
+
+
+ /*-------------------------GALLERY PAGE CASCADING--------------*/
+
+
+
+#frontalpic5 {
+    background-image: url(anasta/hero.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100vh;
+    
+    background-blend-mode: overlay;
+    opacity: 1;
+    margin-top: 120px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; 
+    padding: 10px; 
+}
+
+
+.gal-img1 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+
+#vid5 {
+    background-image: url(anasta/21.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #080808b8;
+    background-blend-mode: overlay;
+    opacity: 1;
+    margin-top: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -150px;
+}
+
+
+
+
+
+/*HERO IMAGE FOR TREASURE*/
+
+
+#frontalpic6 {
+    background-image: url(treasure/17.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    overflow: hidden;
+    height: 150vh;
+    
+    background-blend-mode: overlay;
+    opacity: 1;
+    margin-top: 120px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 
 
